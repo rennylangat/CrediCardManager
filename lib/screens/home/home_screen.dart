@@ -125,21 +125,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       CircleAvatar(
-                        backgroundColor: Colors.black,
+                        backgroundColor: Colors.blueAccent,
                         maxRadius: 4,
                       ),
                       SizedBox(
                         width: getProportionateScreenWidth(5),
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.black,
+                        backgroundColor: Colors.blueAccent,
                         maxRadius: 4,
                       ),
                       SizedBox(
                         width: getProportionateScreenWidth(5),
                       ),
                       CircleAvatar(
-                        backgroundColor: Colors.black,
+                        backgroundColor: Colors.blueAccent,
                         maxRadius: 4,
                       ),
                     ],
