@@ -1,5 +1,6 @@
 import 'package:card_manager/size_config.dart';
 import 'package:card_manager/widgets/credit_card.dart';
+import 'package:card_manager/widgets/recent_transactions.dart';
 import 'package:card_manager/widgets/rounded_button.dart';
 import 'package:flutter/material.dart';
 
@@ -189,6 +190,135 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 SizedBox(
                   height: getProportionateScreenHeight(20),
+                ),
+                SizedBox(
+                  height: getProportionateScreenHeight(20),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(16),
+                          topRight: Radius.circular(16)),
+                      color: Colors.white),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              width: SizeConfig.screenWidth * 0.3,
+                              height: SizeConfig.screenHeight * 0.005,
+                              decoration: BoxDecoration(
+                                  color: Colors.black87,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(16))),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: getProportionateScreenHeight(15),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Container(
+                                child: Text(
+                              "Recent Transactions",
+                              style: TextStyle(
+                                  fontSize: getProportionateScreenHeight(18),
+                                  fontWeight: FontWeight.w800),
+                            )),
+                            SizedBox(
+                              width: SizeConfig.screenWidth * 0.25,
+                            ),
+                            Container(
+                                child: Text(
+                              "Statistics",
+                              style: TextStyle(
+                                  fontSize: getProportionateScreenHeight(18),
+                                  fontWeight: FontWeight.w800),
+                            ))
+                          ],
+                        ),
+                        SizedBox(
+                          height: getProportionateScreenHeight(5),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(8, 0, 8, 0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                width: SizeConfig.screenWidth * 0.8,
+                                height: SizeConfig.screenHeight * 0.004,
+                                color: Colors.grey,
+                                child: Row(
+                                  children: [
+                                    Container(
+                                      width: SizeConfig.screenWidth * 0.4,
+                                      height: SizeConfig.screenHeight * 0.002,
+                                      color: Colors.deepOrange,
+                                    ),
+                                    Container(
+                                      width: SizeConfig.screenWidth * 0.4,
+                                      height: SizeConfig.screenHeight * 0.005,
+                                      color: Colors.grey,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          height: getProportionateScreenHeight(15),
+                        ),
+                        Container(
+                          width: SizeConfig.screenWidth,
+                          height: SizeConfig.screenHeight * 0.5,
+                          child: ListView(
+                            children: [
+                              RecentTransacts(
+                                amt: "\$2500",
+                                iconType: Icons.arrow_downward_outlined,
+                                priceColor: Colors.red,
+                                transactTitle: "Netflix",
+                                time: "07/12/21 12:35pm",
+                              ),
+                              SizedBox(
+                                height: getProportionateScreenHeight(10),
+                              ),
+                              RecentTransacts(
+                                amt: "\$2500",
+                                iconType: Icons.arrow_upward_outlined,
+                                priceColor: Colors.green,
+                                transactTitle: "Angela Francis",
+                                time: "07/12/21 12:35pm",
+                              ),
+                              SizedBox(
+                                height: getProportionateScreenHeight(10),
+                              ),
+                              RecentTransacts(
+                                amt: "\$2500",
+                                iconType: Icons.arrow_downward_outlined,
+                                priceColor: Colors.red,
+                                transactTitle: "Renny Langat",
+                                time: "07/12/21 12:35pm",
+                              ),
+                              SizedBox(
+                                height: getProportionateScreenHeight(10),
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
                 ),
               ],
             ),
