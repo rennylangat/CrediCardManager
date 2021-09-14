@@ -1,16 +1,4 @@
 # card_manager
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+An application to help you manage your credit cards and view your transactions
+![simulator_screenshot_769A2042-9F12-4E8F-924F-C9072A59DEDA](https://user-images.githubusercontent.com/16797769/133211810-a9fd03b2-bd91-4fc2-8c90-5d5fea7cf15a.png)
